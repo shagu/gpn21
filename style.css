@@ -1,0 +1,49 @@
+@font-face {
+  font-family: vt323;
+  src: url("assets/VT323-Regular.ttf");
+}
+
+html, body {
+  font-family: vt323;
+  background-color: #222;
+  color: #ddd;
+}
+
+#game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min-content;
+}
+
+#header {
+  border-bottom: 1px #222 solid;
+  background-color: #444;
+  text-align: center;
+  color: #3fc;
+  padding: 8px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#canvas {
+  image-rendering: pixelated;
+  border: 1px #444 solid;
+}
+
+#hud {
+  border-top: 1px #222 solid;
+  background-color: #444;
+  color: #fff;
+  padding: 12px;
+  font-size: 24px;
+}
+
+#hud #right {
+  float: right;
+}
+
+#hud_units, #hud_max {
+  font-weight: bold;
+}
